@@ -4,7 +4,7 @@ from flask import render_template
 app = Flask(__name__)
 
 def get_csv():
-    csv_path = 'https://raw.githubusercontent.com/ireapps/first-news-app/master/static/la-riots-deaths.csv'
+    csv_path = r'C:\Users\soonh\first-news-app\repo\la-riots-deaths.csv'
     csv_file = open(csv_path, 'r')
     csv_obj = csv.DictReader(csv_file)
     csv_list = list(csv_obj)
